@@ -5,3 +5,7 @@ Instastalker is an app that allows you to "observe" a particular instagram user 
 
 Next Steps: 
 -Allow for pagination by leveraging the instagram API query indexes (if available). 
+
+Design resources: 
+https://www.materialpalette.com/
+
