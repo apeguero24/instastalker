@@ -24,7 +24,7 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
-*.xcworkspace
+
 
 
 # End of https://www.gitignore.io/api/xcode
