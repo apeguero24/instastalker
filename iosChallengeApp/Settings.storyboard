@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4dH-2H-GJb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Presenter-->
+        <scene sceneID="HrZ-8d-g63">
+            <objects>
+                <viewController storyboardIdentifier="settings" id="4dH-2H-GJb" customClass="SettingsPresenter" customModule="iosChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q6G-BT-7x1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Doq-Ho-L0l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uj6-Xy-P5k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-4X-gTQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-xy-uBU">
+                                        <rect key="frame" x="154" y="23" width="66" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="0C6-ZX-wlJ"/>
+                                            <constraint firstAttribute="height" constant="21" id="aHx-wV-3sB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bj-bk-Sfa">
+                                        <rect key="frame" x="312" y="18" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="1pw-jR-Nwd"/>
+                                            <constraint firstAttribute="width" constant="35" id="OXP-Ho-CEY"/>
+                                        </constraints>
+                                        <state key="normal" image="right-back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="4dH-2H-GJb" eventType="touchUpInside" id="rY1-6t-2HQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2bj-bk-Sfa" firstAttribute="top" secondItem="Caj-4X-gTQ" secondAttribute="top" constant="18" id="FTM-w6-4TX"/>
+                                    <constraint firstAttribute="height" constant="67" id="W4a-MC-iSR"/>
+                                    <constraint firstItem="Vae-xy-uBU" firstAttribute="centerX" secondItem="Caj-4X-gTQ" secondAttribute="centerX" id="qWu-kC-vd8"/>
+                                    <constraint firstItem="Vae-xy-uBU" firstAttribute="centerY" secondItem="Caj-4X-gTQ" secondAttribute="centerY" id="rTk-3U-V2J"/>
+                                    <constraint firstAttribute="trailing" secondItem="2bj-bk-Sfa" secondAttribute="trailing" constant="28" id="ucW-hD-9pC"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account_circle_black_48dp" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-Rp-z8u">
+                                <rect key="frame" x="154" y="95" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="7Nh-dG-Gwf"/>
+                                    <constraint firstAttribute="width" constant="67" id="WSJ-hq-pqg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instagram username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-o3-Pxa">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pzG-Y6-cxU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaM-CP-dhP">
+                                <rect key="frame" x="116" y="231" width="154" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3PJ-A6-KKg"/>
+                                    <constraint firstAttribute="width" constant="154" id="hiY-9h-Puj"/>
+                                </constraints>
+                                <state key="normal" image="Button"/>
+                                <connections>
+                                    <action selector="changeUsernameButtonPressed:" destination="4dH-2H-GJb" eventType="touchUpInside" id="Jvy-oV-shC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehy-ef-ZNr">
+                                <rect key="frame" x="132" y="238" width="123" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="8Uq-kc-Fga"/>
+                                    <constraint firstAttribute="width" constant="123" id="9G2-7B-xWG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bKQ-o3-Pxa" firstAttribute="trailing" secondItem="Uj6-Xy-P5k" secondAttribute="trailingMargin" id="0CO-IU-gzR"/>
+                            <constraint firstItem="iaM-CP-dhP" firstAttribute="centerX" secondItem="ehy-ef-ZNr" secondAttribute="centerX" id="44x-b2-h3t"/>
+                            <constraint firstItem="bKQ-o3-Pxa" firstAttribute="leading" secondItem="Uj6-Xy-P5k" secondAttribute="leadingMargin" id="9Oy-5s-pG7"/>
+                            <constraint firstItem="bKQ-o3-Pxa" firstAttribute="top" secondItem="ZYy-Rp-z8u" secondAttribute="bottom" constant="8" symbolic="YES" id="Dlz-Lg-pYy"/>
+                            <constraint firstItem="iaM-CP-dhP" firstAttribute="top" secondItem="bKQ-o3-Pxa" secondAttribute="bottom" constant="31" id="QxX-cm-K9l"/>
+                            <constraint firstItem="ZYy-Rp-z8u" firstAttribute="centerX" secondItem="Uj6-Xy-P5k" secondAttribute="centerX" id="VO3-un-vDW"/>
+                            <constraint firstItem="Caj-4X-gTQ" firstAttribute="top" secondItem="Uj6-Xy-P5k" secondAttribute="top" id="W9g-65-ang"/>
+                            <constraint firstAttribute="trailing" secondItem="Caj-4X-gTQ" secondAttribute="trailing" id="WpH-uG-6XN"/>
+                            <constraint firstItem="iaM-CP-dhP" firstAttribute="leading" secondItem="Uj6-Xy-P5k" secondAttribute="leadingMargin" constant="100" id="c02-nd-vAH"/>
+                            <constraint firstItem="Caj-4X-gTQ" firstAttribute="leading" secondItem="Uj6-Xy-P5k" secondAttribute="leading" id="cOH-Gb-YFy"/>
+                            <constraint firstItem="ZYy-Rp-z8u" firstAttribute="centerX" secondItem="bKQ-o3-Pxa" secondAttribute="centerX" id="eyY-LW-zGg"/>
+                            <constraint firstItem="iaM-CP-dhP" firstAttribute="centerY" secondItem="ehy-ef-ZNr" secondAttribute="centerY" id="grw-dN-qYs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iaM-CP-dhP" secondAttribute="trailing" constant="89" id="i8W-6O-AHR"/>
+                            <constraint firstItem="ZYy-Rp-z8u" firstAttribute="top" secondItem="Caj-4X-gTQ" secondAttribute="bottom" constant="28" id="soU-JM-6Dj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTextBox" destination="bKQ-o3-Pxa" id="Eg0-Xi-TFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1d-eR-7ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="413" height="109"/>
+        <image name="ic_account_circle_black_48dp" width="96" height="96"/>
+        <image name="right-back" width="96" height="96"/>
+    </resources>
+</document>
